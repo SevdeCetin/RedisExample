@@ -1,0 +1,24 @@
+﻿
+
+<div class="container">
+
+    <form asp-action="Get" asp-controller="Products" method="post">
+        <label>Key</label>
+        <input type="text" name="key" class="form-control" />
+        <button type="submit" class="btn btn-success"> GET </button>
+    </form>
+    <br />
+    <span><b style="color:green;">@ViewBag.Msj</b> </span>
+    <br />
+    <form asp-action="Index" asp-controller="Products" method="post">
+        <label>Key</label>
+        <input type="text" name="key" class="form-control" />
+        <label>Value</label>
+        <input type="text" name="value" class="form-control" />
+        <br />
+        <button type="submit" class="btn btn-success"> SET </button>
+    </form>
+    <br />
+
+</div>
+
